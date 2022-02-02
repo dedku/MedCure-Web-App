@@ -1,0 +1,18 @@
+{
+  "name": "MedCureWebApp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dedku/MedCure-Web-App.git",
+  "author": "dedku <szabat.patryk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  },
+  "scripts": {
+    "prettier:check": "prettier --list-different 'styles/**/*.scss' 'scripts/**/*.{js,jsx,ts,tsx}'",
+    "prettier:fix": "prettier --write 'styles/**/*.scss' 'scripts/**/*.{js,jsx,ts,tsx}'"
+  }
+}
