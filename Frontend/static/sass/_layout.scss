@@ -1,0 +1,19 @@
+.dashboard {
+    grid-template-columns: repeat(4, 1fr);
+
+    &__navigation {
+    }
+
+    &__box-1 {
+        font-size: 1rem;
+    }
+}
+
+.nav-link {
+    grid-column: repeat(3, 1fr);
+    font-size: 20rem;
+}
+
+p {
+    font-size: 30rem;
+}
