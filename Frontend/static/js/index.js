@@ -1,3 +1,10 @@
+import PageNotFound from "./views/PageNotFound";
+import Dashboard from "./views/Dashboard";
+import Invoices from "./views/Invoices";
+import Appointment from "./views/Appointment";
+import Profile from "./views/Profile";
+
+
 const navigateTo = url => {
     history.pushState(null, null, url);
     router();
@@ -7,10 +14,11 @@ const router = async () => {
 
     // Routes setup
     const routes = [
-        { path: "/404", view: () => console.log("View Error") },
-        { path: "/", view: () => console.log("View Dashboard") },
-        { path: "/posts", view: () => console.log("View posts") },
-        { path: "/settings", view: () => console.log("View settings") },
+        { path: "/error", view: PageNotFound },
+        { path: "/", view: Dashboard },
+        { path: "/invoices", view: Invoices },
+        { path: "/appointment", view: Appointment },
+        { path: "/profile", view: Profile },
     ];
 
     // Test potential match
@@ -24,14 +32,18 @@ const router = async () => {
     // Show exact route data
     let match = potentialMatches.find(potentialMatch => potentialMatch.isMatch)
 
+    // Set 404 route
     if(!match) {
         match = {
             route: routes[0],
             isMatch: true,
         }
     }
-
-    console.log(match.route.view())
+    // Store new view data
+    const view = new match.route.view();
+    console.log(match.route.view)
+    // Update new view data
+    document.querySelector("#app").innerHTML = await view.getHtml();
 };
 
 

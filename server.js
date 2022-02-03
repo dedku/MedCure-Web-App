@@ -3,7 +3,9 @@ const path = require("path");
 
 const app = express();
 
-app.use("/static", express.static(path.resolve(__dirname, "frontend", "static")))
+// Middleware for JS files
+// Extension added
+app.use("/static", express.static(path.resolve(__dirname, "frontend", "static"), {extensions: ["js"]}))
 
 // Router index.html
 app.get("/*", (req, res) => {
