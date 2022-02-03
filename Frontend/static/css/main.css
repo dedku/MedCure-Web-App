@@ -1,11 +1,9 @@
-.dashboard {
-  grid-template-columns: repeat(4, 1fr); }
-  .dashboard__box-1 {
-    font-size: 1rem; }
+.dashboard__navigation {
+  box-sizing: border-box; }
+
+.dashboard__box-1 {
+  font-size: 1rem; }
 
 .nav-link {
   grid-column: repeat(3, 1fr);
-  font-size: 20rem; }
-
-p {
-  font-size: 11rem; }
+  font-size: 30rem; }

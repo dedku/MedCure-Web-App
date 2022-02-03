@@ -1,7 +1,6 @@
 .dashboard {
-    grid-template-columns: repeat(4, 1fr);
-
     &__navigation {
+        box-sizing: border-box;
     }
 
     &__box-1 {
@@ -11,9 +10,5 @@
 
 .nav-link {
     grid-column: repeat(3, 1fr);
-    font-size: 20rem;
-}
-
-p {
-    font-size: 11rem;
+    font-size: 30rem;
 }
