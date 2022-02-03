@@ -41,8 +41,9 @@ const router = async () => {
     }
     // Store new view data
     const view = new match.route.view();
-    console.log(match.route.view)
-    // Update new view data
+
+    // Update new view html & nav data
+    document.querySelector("#nav").innerHTML = await view.getSidebar();
     document.querySelector("#app").innerHTML = await view.getHtml();
 };
 
