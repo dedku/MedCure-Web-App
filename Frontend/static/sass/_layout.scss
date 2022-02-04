@@ -1,14 +1,43 @@
 .dashboard {
-    &__navigation {
-        box-sizing: border-box;
-    }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 auto;
+    gap: 1rem;
+    margin-left: 20%;
+    font-family: sans-serif;
 
-    &__box-1 {
+    &__box-1,
+    &__box-2,
+    &__box-3,
+    &__box-4 {
         font-size: 1rem;
-    }
-}
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: 0.15);
+        border-radius: 8px;
+        text-align: left;
+        padding-left: 1rem;
 
-.nav-link {
-    grid-column: repeat(3, 1fr);
-    font-size: 30rem;
+        &__text-top {
+            color: $color-dark-grey;
+            font-size: 0.7rem;
+            transform: translateY(+3px);
+            padding: 0, 0, 0;
+        }
+
+        &__text-bottom {
+            color: $color-black;
+            font-size: 1.2rem;
+            padding-top: 0;
+            font-weight: bold;
+        }
+    }
+
+    &__midbox {
+        font-size: 3rem;
+
+        &mid-box__1 {
+            grid-template-columns: 20rem 20rem;
+            background-color: aqua;
+        }
+    }
 }
