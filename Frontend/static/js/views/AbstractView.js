@@ -1,4 +1,5 @@
 export default class {
+
     constructor(params) {
         this.params = params;
     }
@@ -21,7 +22,6 @@ export default class {
                         <li>
                                 <box-icon name='menu'></box-icon>
                                 <input type="text" placeholder="Search...">
-                            </a>
                         </li>
                         <li><a href="/" data-link>
                                 <box-icon name='menu'></box-icon>

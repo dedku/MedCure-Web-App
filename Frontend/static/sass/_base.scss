@@ -6,13 +6,10 @@ $color-dark-grey: rgba(191, 191, 191, 1);
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    // box-sizing: border-box;
 }
 
 body {
     background-color: $color-light-grey;
-    position: relative;
     min-height: 100vh;
-    width: 100vh;
-    overflow: hidden;
 }

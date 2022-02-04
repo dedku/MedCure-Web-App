@@ -1,12 +1,16 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  min-height: 100vh; }
 
 .dashboard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 0 auto;
   gap: 1rem;
-  margin-left: 20%;
   font-family: sans-serif; }
   .dashboard__box-1, .dashboard__box-2, .dashboard__box-3, .dashboard__box-4 {
     font-size: 1rem;
@@ -30,3 +34,12 @@ body {
     .dashboard__midboxmid-box__1 {
       grid-template-columns: 20rem 20rem;
       background-color: aqua; }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #eeeeee;
+  width: 240px;
+  height: 100%;
+  padding: 6px 14px; }

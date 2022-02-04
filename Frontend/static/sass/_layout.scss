@@ -3,7 +3,6 @@
     grid-template-columns: repeat(4, 1fr);
     padding: 0 auto;
     gap: 1rem;
-    margin-left: 20%;
     font-family: sans-serif;
 
     &__box-1,
@@ -40,4 +39,14 @@
             background-color: aqua;
         }
     }
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $color-light-grey;
+    width: 240px;
+    height: 100%;
+    padding: 6px 14px;
 }
