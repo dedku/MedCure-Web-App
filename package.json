@@ -6,6 +6,7 @@
     "author": "dedku <szabat.patryk@gmail.com>",
     "license": "MIT",
     "dependencies": {
+        "boxicons": "^2.1.1",
         "express": "^4.17.2"
     },
     "devDependencies": {
