@@ -1,9 +1,32 @@
-.dashboard__navigation {
-  box-sizing: border-box; }
+body {
+  background-color: #eeeeee; }
 
-.dashboard__box-1 {
-  font-size: 1rem; }
-
-.nav-link {
-  grid-column: repeat(3, 1fr);
-  font-size: 30rem; }
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 auto;
+  gap: 1rem;
+  margin-left: 20%;
+  font-family: sans-serif; }
+  .dashboard__box-1, .dashboard__box-2, .dashboard__box-3, .dashboard__box-4 {
+    font-size: 1rem;
+    background-color: white;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    text-align: left;
+    padding-left: 1rem; }
+    .dashboard__box-1__text-top, .dashboard__box-2__text-top, .dashboard__box-3__text-top, .dashboard__box-4__text-top {
+      color: #bfbfbf;
+      font-size: 0.7rem;
+      transform: translateY(3px);
+      padding: 0, 0, 0; }
+    .dashboard__box-1__text-bottom, .dashboard__box-2__text-bottom, .dashboard__box-3__text-bottom, .dashboard__box-4__text-bottom {
+      color: black;
+      font-size: 1.2rem;
+      padding-top: 0;
+      font-weight: bold; }
+  .dashboard__midbox {
+    font-size: 3rem; }
+    .dashboard__midboxmid-box__1 {
+      grid-template-columns: 20rem 20rem;
+      background-color: aqua; }
