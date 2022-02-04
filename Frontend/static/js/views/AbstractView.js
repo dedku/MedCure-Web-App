@@ -13,38 +13,44 @@ export default class {
             return`
                 <div class="sidebar">
                     <div class="sidebar__logo_content">
-                        <div class="sidebar__logo_content__logo"></div>
-                        <box-icon name='plus-medical'></box-icon>
+                        <div class="sidebar__logo_content__logo">
+                        <box-icon name='plus-medical' color='#fff' ></box-icon>
                         <div class="sidebar__logo_content__logo__logo_name">MedCure</div>
+                        </div>
                     </div>
-                    <box-icon name='menu'></box-icon>
-                    <ul class="nav">
-                        <li>
-                                <box-icon name='menu'></box-icon>
+                    <box-icon name='menu' color='#fff'></box-icon>
+                    <ul class="sidebar__nav">
+                        <li class="sidebar__nav__item">
+                                <box-icon class="sidebar__nav__item-icon" name='search' color='#fff'></box-icon>
                                 <input type="text" placeholder="Search...">
                         </li>
-                        <li><a href="/" data-link>
-                                <box-icon name='menu'></box-icon>
+                        <li class="sidebar__nav__item">
+                            <a class="sidebar__nav__item__link" href="/" data-link>
+                                <box-icon name='menu' color='#fff'></box-icon>
                                 <span class="nav__link_name">Dashboard</span>
                             </a>
                         </li>
-                        <li><a href="/invoices" data-link>
-                                <box-icon name='book-content'></box-icon>
+                        <li class="sidebar__nav__item">
+                            <a class="sidebar__nav__item__link" href="/invoices" data-link>
+                                <box-icon name='book-content' color='#fff'></box-icon>
                                 <span class="nav__link_name">Invoices</span>
                             </a>
                         </li>
-                        <li><a href="/profile" data-link>
-                                <box-icon name='face' type='solid'></box-icon>
+                        <li class="sidebar__nav__item">
+                            <a class="sidebar__nav__item__link" href="/profile" data-link>
+                                <box-icon name='face' type='solid' color='#fff'></box-icon>
                                 <span class="nav__link_name">Profile</span>
                             </a>
                         </li>
-                        <li><a href="/settings" data-link>
-                                <box-icon type='solid' name='brightness'></box-icon>
+                        <li class="sidebar__nav__item">
+                            <a class="sidebar__nav__item__link" href="/settings" data-link>
+                                <box-icon type='solid' name='brightness' color='#fff'></box-icon>
                                 <span class="nav__link_name">Settings</span>
                             </a>
                         </li>
-                        <li><a href="#" data-link>
-                                <box-icon type='solid' name='brightness'></box-icon>
+                        <li class="sidebar__nav__item">
+                            <a class="sidebar__nav__item__link" href="#" data-link>
+                                <box-icon type='solid' name='brightness' color='#fff'></box-icon>
                                 <span class="nav__link_name">Log out</span>
                             </a>
                         </li>

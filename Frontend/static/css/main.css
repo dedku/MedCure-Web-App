@@ -43,3 +43,33 @@ body {
   width: 240px;
   height: 100%;
   padding: 6px 14px; }
+  .sidebar__logo_content__logo {
+    color: black;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    font-size: 26px;
+    margin-right: 5px; }
+    .sidebar__logo_content__logo__logo_name {
+      font-size: 20px;
+      font-weight: 400; }
+  .sidebar__nav {
+    margin-top: 20px; }
+    .sidebar__nav__item {
+      position: relative;
+      list-style: none;
+      height: 50px;
+      width: 100%;
+      margin: 0 5px;
+      line-height: 50px; }
+      .sidebar__nav__item__link {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-decoration: none; }
+        .sidebar__nav__item__link-icon {
+          height: 50px;
+          line-height: 50px;
+          min-width: 50px;
+          border-radius: 12px; }

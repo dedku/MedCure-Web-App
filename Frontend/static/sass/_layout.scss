@@ -49,4 +49,47 @@
     width: 240px;
     height: 100%;
     padding: 6px 14px;
+    &__logo_content {
+        &__logo {
+            color: $color-black;
+            display: flex;
+            height: 50px;
+            width: 100%;
+            align-items: center;
+            font-size: 26px;
+            margin-right: 5px;
+
+            &__logo_name {
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__nav {
+        margin-top: 20px;
+
+        &__item {
+            position: relative;
+            list-style: none;
+            height: 50px;
+            width: 100%;
+            margin: 0 5px;
+            line-height: 50px;
+
+            &__link {
+                color: #fff;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+
+                &-icon {
+                    height: 50px;
+                    line-height: 50px;
+                    min-width: 50px;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
 }
