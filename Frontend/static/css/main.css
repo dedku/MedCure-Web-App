@@ -1,5 +1,6 @@
 body {
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  margin-left: 20%; }
 
 .dashboard {
   display: grid;
@@ -8,25 +9,52 @@ body {
   gap: 1rem;
   margin-left: 20%;
   font-family: sans-serif; }
-  .dashboard__box-1, .dashboard__box-2, .dashboard__box-3, .dashboard__box-4 {
+  .dashboard__box {
     font-size: 1rem;
     background-color: white;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: left;
-    padding-left: 1rem; }
-    .dashboard__box-1__text-top, .dashboard__box-2__text-top, .dashboard__box-3__text-top, .dashboard__box-4__text-top {
+    padding-left: 1rem;
+    height: 5rem; }
+    .dashboard__box__text-top {
       color: #bfbfbf;
       font-size: 0.7rem;
       transform: translateY(3px);
-      padding: 0, 0, 0; }
-    .dashboard__box-1__text-bottom, .dashboard__box-2__text-bottom, .dashboard__box-3__text-bottom, .dashboard__box-4__text-bottom {
+      padding-top: 1px;
+      padding-bottom: 1px; }
+    .dashboard__box__text-bottom {
       color: black;
       font-size: 1.2rem;
       padding-top: 0;
       font-weight: bold; }
-  .dashboard__midbox {
-    font-size: 3rem; }
-    .dashboard__midboxmid-box__1 {
-      grid-template-columns: 20rem 20rem;
-      background-color: aqua; }
+
+.grid {
+  display: grid;
+  margin-top: 1rem;
+  font-size: 2rem;
+  grid-row-gap: 1rem;
+  grid-column-gap: 2.5rem;
+  border-radius: 10px; }
+  .grid__grid__top {
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(2, 20rem); }
+  .grid__grid__mid {
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows: repeat(4, 20rem); }
+  .grid__mid-box {
+    background-color: white;
+    color: orangered;
+    padding: 10px 4px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1); }
+  .grid__mid-box_3 {
+    grid: span 2;
+    color: aquamarine;
+    background-color: brown;
+    padding: 10px 4px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1); }
+  .grid__mid-box_4 {
+    color: coral;
+    background-color: chartreuse;
+    padding: 10px 4px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1); }
