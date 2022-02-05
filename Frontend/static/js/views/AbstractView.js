@@ -22,7 +22,7 @@ export default class {
                         <box-icon name='menu' color='#fff'></box-icon>
                         <ul class="sidebar__sidebar-content__nav">
                             <li class="sidebar__sidebar-content__nav__item">
-                                    <box-icon class="sidebar__sidebar-content__nav__item--icon" name='search' color='#fff'></box-icon>
+                                    <i class="bx bx-search-alt-2 sidebar__sidebar-content__nav__item__icon"      color='#fff'></i>
                                     <input type="text" placeholder="Search...">
                             </li>
                             <li class="sidebar__sidebar-content__nav__item">

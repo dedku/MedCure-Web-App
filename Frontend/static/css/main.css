@@ -76,7 +76,7 @@ body {
         display: flex;
         align-items: center;
         text-decoration: none; }
-        .sidebar__sidebar-content__nav__item__link--icon {
+        .sidebar__sidebar-content__nav__item__link__icon {
           height: 50px;
           line-height: 50px;
           min-width: 50px;
