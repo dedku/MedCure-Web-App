@@ -11,5 +11,15 @@ $color-dark-grey: rgba(191, 191, 191, 1);
 
 body {
     background-color: $color-light-grey;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    box-sizing: border-box;
+}
+
+.column {
+    height: 100%;
+    display: grid;
 }

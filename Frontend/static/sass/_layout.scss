@@ -1,93 +1,90 @@
 .dashboard {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 0 auto;
-    gap: 1rem;
-    font-family: sans-serif;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 1rem 1rem;
+        gap: 1rem;
+        font-family: sans-serif;
 
-    &__box-1,
-    &__box-2,
-    &__box-3,
-    &__box-4 {
-        font-size: 1rem;
-        background-color: $color-white;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: 0.15);
-        border-radius: 8px;
-        text-align: left;
-        padding-left: 1rem;
+        &__box-1,
+        &__box-2,
+        &__box-3,
+        &__box-4 {
+            font-size: 1rem;
+            background-color: $color-white;
+            box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: 0.15);
+            border-radius: 8px;
+            text-align: left;
+            padding-left: 1rem;
 
-        &__text-top {
-            color: $color-dark-grey;
-            font-size: 0.7rem;
-            transform: translateY(+3px);
-            padding: 0, 0, 0;
+            &__text-top {
+                color: $color-dark-grey;
+                font-size: 0.7rem;
+                transform: translateY(+3px);
+                padding: 0, 0, 0;
+            }
+
+            &__text-bottom {
+                color: $color-black;
+                font-size: 1.2rem;
+                padding-top: 0;
+                font-weight: bold;
+            }
         }
 
-        &__text-bottom {
-            color: $color-black;
-            font-size: 1.2rem;
-            padding-top: 0;
-            font-weight: bold;
-        }
-    }
+        &__midbox {
+            font-size: 3rem;
 
-    &__midbox {
-        font-size: 3rem;
-
-        &mid-box__1 {
-            grid-template-columns: 20rem 20rem;
-            background-color: aqua;
+            &mid-box__1 {
+                grid-template-columns: 20rem 20rem;
+                background-color: aqua;
+            }
         }
     }
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: $color-light-grey;
-    width: 240px;
-    height: 100%;
-    padding: 6px 14px;
-    &__logo_content {
-        &__logo {
-            color: $color-black;
-            display: flex;
-            height: 50px;
-            width: 100%;
-            align-items: center;
-            font-size: 26px;
-            margin-right: 5px;
+    &__sidebar-content {
+        &__logo_content {
+            &__logo {
+                color: $color-black;
+                display: flex;
+                height: 50px;
+                width: 100%;
+                align-items: center;
+                font-size: 26px;
+                margin-right: 5px;
 
-            &__logo_name {
-                font-size: 20px;
-                font-weight: 400;
+                &__logo_name {
+                    font-size: 20px;
+                    font-weight: 400;
+                }
             }
         }
-    }
 
-    &__nav {
-        margin-top: 20px;
+        &__nav {
+            margin-top: 20px;
 
-        &__item {
-            position: relative;
-            list-style: none;
-            height: 50px;
-            width: 100%;
-            margin: 0 5px;
-            line-height: 50px;
+            &__item {
+                position: relative;
+                list-style: none;
+                height: 50px;
+                width: 100%;
+                margin: 0 5px;
+                line-height: 50px;
 
-            &__link {
-                color: #fff;
-                display: flex;
-                align-items: center;
-                text-decoration: none;
+                &__link {
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
 
-                &-icon {
-                    height: 50px;
-                    line-height: 50px;
-                    min-width: 50px;
-                    border-radius: 12px;
+                    &--icon {
+                        height: 50px;
+                        line-height: 50px;
+                        min-width: 50px;
+                        border-radius: 12px;
+                    }
                 }
             }
         }
