@@ -45,6 +45,13 @@
 
 .sidebar {
     &__sidebar-content {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $color-light-grey;
+        padding: 6px 12px;
+
         &__logo_content {
             &__logo {
                 color: $color-black;
