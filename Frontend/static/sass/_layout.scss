@@ -112,7 +112,7 @@
     .bx-border {
         border-radius: 8px;
         box-shadow: rgba(212, 212, 212, 0.35) 0px 2px 2px;
-        border-color: $color-teal;
+        border-color: #fff;
     }
 
     :hover.sidebar {
@@ -127,6 +127,7 @@
         > .sidebar__nav-icon {
             background-color: $color-teal;
             color: #fff;
+            border-color: $color-teal;
         }
     }
 

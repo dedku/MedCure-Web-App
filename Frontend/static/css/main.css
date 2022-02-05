@@ -101,7 +101,7 @@ body {
   .sidebar .bx-border {
     border-radius: 8px;
     box-shadow: rgba(212, 212, 212, 0.35) 0px 2px 2px;
-    border-color: #4fd1c5; }
+    border-color: #fff; }
   .sidebar :hover.sidebar__nav-link {
     color: #11101a;
     background-color: #fff;
@@ -109,7 +109,8 @@ body {
     font-weight: bold; }
   .sidebar .sidebar__nav-link:hover > .sidebar__nav-icon {
     background-color: #4fd1c5;
-    color: #fff; }
+    color: #fff;
+    border-color: #4fd1c5; }
   .sidebar .bx-search-alt-2 {
     position: absolute;
     margin-top: 10px;
