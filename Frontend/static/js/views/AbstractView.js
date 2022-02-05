@@ -19,7 +19,7 @@ export default class {
                             <div class="sideba__logo_text">MedCure</div>
                             </div>
                         </div>
-                        <i class='bx bx-menu sidebar__icon bx-border' ></i>
+                        <i class='bx bx-menu sidebar__icon' ></i>
                         <ul class="sidebar__nav">
                             <li class="sidebar__nav-item">
                                     <i class="bx bx-search-alt-2 sidebar__nav-icon"></i>
@@ -27,7 +27,7 @@ export default class {
                             </li>
                             <li class="sidebar__nav-item">
                                 <a class="sidebar__nav-link" href="/" data-link>
-                                    <i class='bx bx-menu sidebar__nav-icon bx-border' ></i>
+                                    <i class='bx bxs-dashboard sidebar__nav-icon bx-border' ></i>
                                     <span class="sidebar__link-name">Dashboard</span>
                                 </a>
                             </li>
