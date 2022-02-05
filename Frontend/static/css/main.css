@@ -49,36 +49,47 @@ body {
     width: 100%;
     background-color: #eeeeee;
     padding: 6px 12px; }
-    .sidebar__sidebar-content__logo_content__logo {
-      color: black;
-      display: flex;
-      height: 50px;
-      width: 100%;
-      align-items: center;
-      font-size: 26px;
-      margin-right: 5px; }
-      .sidebar__sidebar-content__logo_content__logo__logo_name {
-        font-size: 20px;
-        font-weight: 400; }
-    .sidebar__sidebar-content__nav {
-      margin-top: 20px; }
-      .sidebar__sidebar-content__nav__item {
-        position: relative;
-        list-style: none;
-        height: 50px;
-        width: 100%;
-        margin: 0 5px;
-        line-height: 50px; }
-        .sidebar__sidebar-content__nav__item__link {
-          color: #fff;
-          display: flex;
-          align-items: center;
-          text-decoration: none; }
-          .sidebar__sidebar-content__nav__item__link__icon {
-            height: 50px;
-            line-height: 50px;
-            min-width: 50px;
-            border-radius: 12px; }
+  .sidebar__logo {
+    color: black;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    font-size: 26px;
+    margin-right: 5px; }
+  .sidebar__logo_name {
+    font-size: 20px;
+    font-weight: 400; }
+  .sidebar__nav {
+    margin-top: 20px; }
+  .sidebar__nav-item {
+    position: relative;
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    line-height: 50px; }
+  .sidebar__nav-link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 12px; }
+  .sidebar__nav-icon {
+    min-width: 15px;
+    margin: 0 15px 0 15px;
+    background-color: #fff;
+    line-height: 50px;
+    text-align: center;
+    color: #4fd1c5;
+    transition: all 0.3s ease; }
+  .sidebar :hover.sidebar__nav-link {
+    color: #11101a;
+    background-color: #fff; }
+  .sidebar .sidebar__nav-link:hover > .sidebar__nav-icon {
+    background-color: #4fd1c5;
+    color: #fff; }
 
 .grid {
   display: grid;

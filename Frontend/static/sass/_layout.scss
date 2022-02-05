@@ -44,49 +44,65 @@
         width: 100%;
         background-color: $color-light-grey;
         padding: 6px 12px;
+    }
 
-        &__logo_content {
-            &__logo {
-                color: $color-black;
-                display: flex;
-                height: 50px;
-                width: 100%;
-                align-items: center;
-                font-size: 26px;
-                margin-right: 5px;
+    &__logo {
+        color: $color-black;
+        display: flex;
+        height: 50px;
+        width: 100%;
+        align-items: center;
+        font-size: 26px;
+        margin-right: 5px;
+    }
 
-                &__logo_name {
-                    font-size: 20px;
-                    font-weight: 400;
-                }
-            }
+    &__logo_name {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    &__nav {
+        margin-top: 20px;
+    }
+
+    &__nav-item {
+        position: relative;
+        list-style: none;
+        height: 50px;
+        width: 100%;
+        margin: 0 5px;
+        line-height: 50px;
+    }
+
+    &__nav-link {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border-radius: 12px;
+    }
+
+    &__nav-icon {
+        min-width: 15px;
+        margin: 0 15px 0 15px;
+        background-color: #fff;
+        line-height: 50px;
+        text-align: center;
+        color: $color-teal;
+        transition: all 0.3s ease;
+    }
+
+    :hover.sidebar {
+        &__nav-link {
+            color: #11101a;
+            background-color: #fff;
         }
-
-        &__nav {
-            margin-top: 20px;
-
-            &__item {
-                position: relative;
-                list-style: none;
-                height: 50px;
-                width: 100%;
-                margin: 0 5px;
-                line-height: 50px;
-
-                &__link {
-                    color: #fff;
-                    display: flex;
-                    align-items: center;
-                    text-decoration: none;
-
-                    &__icon {
-                        height: 50px;
-                        line-height: 50px;
-                        min-width: 50px;
-                        border-radius: 12px;
-                    }
-                }
-            }
+    }
+    .sidebar__nav-link:hover {
+        > .sidebar__nav-icon {
+            background-color: $color-teal;
+            color: #fff;
         }
     }
 }
