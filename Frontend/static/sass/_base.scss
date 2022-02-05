@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 $color-black: rgba(0, 0, 0, 1);
 $color-white: rgba(255, 255, 255, 1);
 $color-light-grey: rgba(238, 238, 238, 1);
@@ -16,6 +18,7 @@ body {
     display: grid;
     grid-template-columns: 240px 5fr;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .column {
