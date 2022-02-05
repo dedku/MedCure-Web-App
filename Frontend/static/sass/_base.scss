@@ -7,3 +7,11 @@ body {
     background-color: $color-light-grey;
     margin-left: 20%;
 }
+
+.col-span-2 {
+    grid-column: span 2;
+}
+
+.col-span-3 {
+    grid-column: span 3;
+}
