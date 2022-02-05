@@ -36,6 +36,7 @@
 
 .sidebar {
     position: fixed;
+    width: 180px;
 
     &__sidebar-content {
         top: 0;
@@ -63,6 +64,7 @@
 
     &__nav {
         margin-top: 20px;
+        margin-left: 1rem;
     }
 
     &__nav-item {
@@ -70,33 +72,55 @@
         list-style: none;
         height: 50px;
         width: 100%;
-        margin: 0 5px;
+        margin: 5px 5px;
         line-height: 50px;
     }
 
     &__nav-link {
-        color: #fff;
+        color: #a0aec0;
         display: flex;
         align-items: center;
         text-decoration: none;
         transition: all 0.3s ease;
         border-radius: 12px;
     }
-
+    // TODO Search icon border & shadow fix
     &__nav-icon {
         min-width: 15px;
         margin: 0 15px 0 15px;
-        background-color: #fff;
         line-height: 50px;
         text-align: center;
         color: $color-teal;
         transition: all 0.3s ease;
+        box-shadow: rgba(212, 212, 212, 0.35) 0px 2px 5px;
+        background-color: #fff;
+    }
+
+    &__search-bar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+        outline: none;
+        border: none;
+        background-color: #fff;
+        padding-left: 3rem;
+        font-size: 16px;
+        color: #000;
+    }
+
+    .bx-border {
+        border-radius: 8px;
+        box-shadow: rgba(212, 212, 212, 0.35) 0px 2px 2px;
+        border-color: $color-teal;
     }
 
     :hover.sidebar {
         &__nav-link {
             color: #11101a;
             background-color: #fff;
+            box-shadow: rgba(212, 212, 212, 0.35) 0px 2px 5px;
+            font-weight: bold;
         }
     }
     .sidebar__nav-link:hover {
@@ -104,6 +128,14 @@
             background-color: $color-teal;
             color: #fff;
         }
+    }
+
+    .bx-search-alt-2 {
+        position: absolute;
+        margin-top: 10px;
+        z-index: 99;
+        color: #000;
+        font-size: 30px;
     }
 }
 

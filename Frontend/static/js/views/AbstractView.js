@@ -22,8 +22,8 @@ export default class {
                         <i class='bx bx-menu sidebar__icon bx-border' ></i>
                         <ul class="sidebar__nav">
                             <li class="sidebar__nav-item">
-                                    <i class="bx bx-search-alt-2 sidebar__nav-icon bx-border"      color='#fff'></i>
-                                    <input type="text" placeholder="Search...">
+                                    <i class="bx bx-search-alt-2 sidebar__nav-icon"></i>
+                                    <input class="sidebar__search-bar" type="text" placeholder="Search...">
                             </li>
                             <li class="sidebar__nav-item">
                                 <a class="sidebar__nav-link" href="/" data-link>
