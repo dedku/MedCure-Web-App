@@ -1,10 +1,9 @@
 .dashboard {
-    &__grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        padding: 1rem 1rem;
-        gap: 1rem;
-        font-family: sans-serif;
+    display: grid;
+    padding: 1rem 1rem;
+    gap: 1rem;
+    font-family: sans-serif;
+    grid-template-columns: repeat(4, 1fr);
 
     &__box {
         font-size: 1rem;
@@ -15,7 +14,7 @@
         padding-left: 1rem;
 
         // zdefiniowana wysokosc dla top-boxów
-        height: 5rem;
+        height: 100%;
 
         &__text-top {
             color: $color-dark-grey;
@@ -23,7 +22,6 @@
             transform: translateY(+3px);
             padding-top: 1px;
             padding-bottom: 1px;
-
         }
 
         &__midbox {
@@ -35,9 +33,11 @@
             }
         }
     }
-
+}
 
 .sidebar {
+    position: fixed;
+
     &__sidebar-content {
         top: 0;
         left: 0;
@@ -88,18 +88,19 @@
                     }
                 }
             }
-
+        }
+    }
+}
 
 .grid {
-    // margin-top: 1rem;
     display: grid;
+    padding: 1rem 1rem;
     font-size: 1rem;
     grid-row-gap: 20px;
     grid-column-gap: 2rem;
     border-radius: 6px;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 150px);
-    // height: calc(30vh - 10px);
+    grid-template-rows: repeat(5, 150px);
 
     &__mid-box {
         background-color: bisque;
@@ -121,8 +122,8 @@
             background-color: chartreuse;
             grid-column: -6/-3;
             grid-column: span 3;
-            grid-row: span 2;
-            grid-row: 3/5;
+            grid-row: span 3;
+            grid-row: 3/6;
             margin: 0;
         }
 

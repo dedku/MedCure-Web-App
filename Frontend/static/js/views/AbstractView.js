@@ -15,7 +15,7 @@ export default class {
                     <div class="sidebar__sidebar-content">
                         <div class="sidebar__sidebar-content__logo_content">
                             <div class="sidebar__sidebar-content__logo_content__logo">
-                            <box-icon name='plus-medical' color='#fff' ></box-icon>
+                            <i class='bx bx-plus-medical' ></i>
                             <div class="sideba__sidebar-contentr__logo_content__logo__logo_name">MedCure</div>
                             </div>
                         </div>
@@ -27,31 +27,31 @@ export default class {
                             </li>
                             <li class="sidebar__sidebar-content__nav__item">
                                 <a class="sidebar__sidebar-content__nav__item__link" href="/" data-link>
-                                    <box-icon name='menu' color='#fff'></box-icon>
+                                    <i class='bx bx-menu' ></i>
                                     <span class="nav__sidebar-content__link_name">Dashboard</span>
                                 </a>
                             </li>
                             <li class="sidebar__sidebar-content__nav__item">
                                 <a class="sidebar__sidebar-content__nav__item__link" href="/invoices" data-link>
-                                    <box-icon name='book-content' color='#fff'></box-icon>
+                                    <i class='bx bx-book-content' ></i>
                                     <span class="nav__sidebar-content__link_name">Invoices</span>
                                 </a>
                             </li>
                             <li class="sidebar__sidebar-content__nav__item">
                                 <a class="sidebar__sidebar-content__nav__item__link" href="/profile" data-link>
-                                    <box-icon name='face' type='solid' color='#fff'></box-icon>
+                                    <i class='bx bx-face' ></i>
                                     <span class="nav__sidebar-content__link_name">Profile</span>
                                 </a>
                             </li>
                             <li class="sidebar__sidebar-content__nav__item">
                                 <a class="sidebar__sidebar-content__nav__item__link" href="/settings" data-link>
-                                    <box-icon type='solid' name='brightness' color='#fff'></box-icon>
+                                    <i class='bx bx-brightness' ></i>
                                     <span class="nav__sidebar-content__link_name">Settings</span>
                                 </a>
                             </li>
                             <li class="sidebar__sidebar-content__nav__item">
                                 <a class="sidebar__sidebar-content__nav__item__link" href="#" data-link>
-                                    <box-icon type='solid' name='brightness' color='#fff'></box-icon>
+                                    <i class='bx bx-brightness' ></i>
                                     <span class="nav__sidebar-content__link_name">Log out</span>
                                 </a>
                             </li>

@@ -44,7 +44,7 @@ const router = async () => {
 
     // Update new view html & nav data
     document.getElementById("nav").querySelector(".sidebar").innerHTML = await view.getSidebar();
-    document.getElementById("app").querySelector(".dashboard").innerHTML = await view.getHtml();
+    document.getElementById("app").querySelector(".main").innerHTML = await view.getHtml();
 };
 
 

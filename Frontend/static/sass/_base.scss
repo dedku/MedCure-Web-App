@@ -11,9 +11,7 @@ $color-dark-grey: rgba(191, 191, 191, 1);
 
 body {
     background-color: $color-light-grey;
-
     height: 100vh;
-    overflow: hidden;
     margin: 0px;
     display: grid;
     grid-template-columns: 240px 5fr;
@@ -22,8 +20,4 @@ body {
 
 .column {
     height: 100%;
-    display: grid;
-
-    margin-left: 20%;
 }
-
