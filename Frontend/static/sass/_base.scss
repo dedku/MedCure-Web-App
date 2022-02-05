@@ -3,15 +3,27 @@ $color-white: rgba(255, 255, 255, 1);
 $color-light-grey: rgba(238, 238, 238, 1);
 $color-dark-grey: rgba(191, 191, 191, 1);
 
+* {
+    margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
+}
+
 body {
     background-color: $color-light-grey;
+
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 240px 5fr;
+    box-sizing: border-box;
+}
+
+.column {
+    height: 100%;
+    display: grid;
+
     margin-left: 20%;
 }
 
-.col-span-2 {
-    grid-column: span 2;
-}
-
-.col-span-3 {
-    grid-column: span 3;
-}

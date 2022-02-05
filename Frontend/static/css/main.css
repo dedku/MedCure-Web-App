@@ -1,22 +1,33 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   background-color: #eeeeee;
+
+  height: 100vh;
+  overflow: hidden;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 240px 5fr;
+  box-sizing: border-box; }
+
   margin-left: 20%; }
+.column {
+  height: 100%;
+  display: grid; }
 
-.col-span-2 {
-  grid-column: span 2; }
-
-.col-span-3 {
-  grid-column: span 3; }
-
-.dashboard {
+.dashboard__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 0 auto;
+  padding: 1rem 1rem;
   gap: 1rem;
+
   margin-left: 20%;
   font-family: sans-serif;
   margin-bottom: 1rem; }
   .dashboard__box {
+
     font-size: 1rem;
     background-color: white;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
@@ -31,10 +42,55 @@ body {
       padding-top: 1px;
       padding-bottom: 1px; }
     .dashboard__box__text-bottom {
+
       color: black;
       font-size: 1.2rem;
       padding-top: 0;
       font-weight: bold; }
+
+  .dashboard__grid__midbox {
+    font-size: 3rem; }
+    .dashboard__grid__midboxmid-box__1 {
+      grid-template-columns: 20rem 20rem;
+      background-color: aqua; }
+
+.sidebar__sidebar-content {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #eeeeee;
+  padding: 6px 12px; }
+  .sidebar__sidebar-content__logo_content__logo {
+    color: black;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    font-size: 26px;
+    margin-right: 5px; }
+    .sidebar__sidebar-content__logo_content__logo__logo_name {
+      font-size: 20px;
+      font-weight: 400; }
+  .sidebar__sidebar-content__nav {
+    margin-top: 20px; }
+    .sidebar__sidebar-content__nav__item {
+      position: relative;
+      list-style: none;
+      height: 50px;
+      width: 100%;
+      margin: 0 5px;
+      line-height: 50px; }
+      .sidebar__sidebar-content__nav__item__link {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-decoration: none; }
+        .sidebar__sidebar-content__nav__item__link__icon {
+          height: 50px;
+          line-height: 50px;
+          min-width: 50px;
+          border-radius: 12px; }
 
 .grid {
   display: grid;
@@ -68,3 +124,4 @@ body {
       grid-column: -3/-1;
       margin: 0;
       grid-row: span 2; }
+
