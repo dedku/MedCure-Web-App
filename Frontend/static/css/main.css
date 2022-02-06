@@ -59,11 +59,15 @@ body {
     height: 50px;
     width: 100%;
     align-items: center;
-    font-size: 26px;
+    font-size: 18px;
     margin-right: 5px; }
-  .sidebar__logo_name {
+  .sidebar__logo-icon {
+    background-color: #4fd1c5;
+    color: #fff; }
+  .sidebar__logo_text {
     font-size: 20px;
-    font-weight: 400; }
+    font-weight: bold;
+    margin-left: 5px; }
   .sidebar__icon {
     position: absolute;
     color: #000;
