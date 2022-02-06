@@ -85,7 +85,14 @@
         transition: all 0.3s ease;
         border-radius: 12px;
     }
-    // TODO Search icon border & shadow fix
+
+    &__nav-search-icon {
+        max-width: 15px;
+        margin: 0 15px 0 15px;
+        line-height: 50px;
+        text-align: center;
+    }
+
     &__nav-icon {
         min-width: 15px;
         margin: 0 15px 0 15px;

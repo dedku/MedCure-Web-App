@@ -80,6 +80,11 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
     border-radius: 12px; }
+  .sidebar__nav-search-icon {
+    max-width: 15px;
+    margin: 0 15px 0 15px;
+    line-height: 50px;
+    text-align: center; }
   .sidebar__nav-icon {
     min-width: 15px;
     margin: 0 15px 0 15px;
