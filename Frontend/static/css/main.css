@@ -4,7 +4,9 @@
   padding: 0; }
 
 body {
-  background-color: #e2e8f0;
+
+  background-color: #f5f5f5;
+
   height: 100vh;
   margin: 0px;
   display: grid;
@@ -25,7 +27,8 @@ p {
   padding-bottom: 1px; }
 
 .column {
-  height: 100%; }
+  height: 100%;
+  border-right: 1px solid #e0e0e0; }
 
 .dashboard {
   display: grid;
@@ -52,44 +55,141 @@ p {
         grid-template-columns: 20rem 20rem; }
 
 .sidebar {
-  position: fixed; }
-  .sidebar__sidebar-content {
+  position: fixed;
+  width: 220px; }
+  .sidebar__logo-content {
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #e2e8f0;
-    padding: 6px 12px; }
-    .sidebar__sidebar-content__logo_content__logo {
-      color: black;
-      display: flex;
-      height: 50px;
-      width: 100%;
-      align-items: center;
-      font-size: 26px;
-      margin-right: 5px; }
-      .sidebar__sidebar-content__logo_content__logo__logo_name {
-        font-size: 20px;
-        font-weight: 400; }
-    .sidebar__sidebar-content__nav {
-      margin-top: 20px; }
-      .sidebar__sidebar-content__nav__item {
-        position: relative;
-        list-style: none;
-        height: 50px;
-        width: 100%;
-        margin: 0 5px;
-        line-height: 50px; }
-        .sidebar__sidebar-content__nav__item__link {
-          color: #fff;
-          display: flex;
-          align-items: center;
-          text-decoration: none; }
-          .sidebar__sidebar-content__nav__item__link__icon {
-            height: 50px;
-            line-height: 50px;
-            min-width: 50px;
-            border-radius: 12px; }
+    align-items: center;
+    background-color: #f5f5f5;
+    margin: 6px 12px; }
+  .sidebar__logo {
+    margin: 1rem 0 0 1rem;
+    color: black;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 5px; }
+  .sidebar__logo-icon {
+    background-color: #4fd1c5;
+    color: #fff; }
+  .sidebar__logo_text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px; }
+  .sidebar__icon {
+    position: absolute;
+    color: #000;
+    left: 90%;
+    top: 30px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%); }
+  .sidebar__nav {
+    margin-top: 20px;
+    margin-left: 1rem; }
+  .sidebar__nav-item {
+    position: relative;
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    margin: 5px 5px;
+    line-height: 50px; }
+  .sidebar__nav-link {
+    color: #a0aec0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 12px; }
+  .sidebar__nav-search-icon {
+    max-width: 15px;
+    margin: 0 15px 0 15px;
+    line-height: 50px;
+    text-align: center; }
+  .sidebar__nav-icon {
+    min-width: 15px;
+    margin: 0 15px 0 15px;
+    line-height: 50px;
+    text-align: center;
+    color: #4fd1c5;
+    transition: all 0.3s ease;
+    box-shadow: rgba(212, 212, 212, 0.35) 0px 2px 5px;
+    background-color: #fff; }
+  .sidebar__search-bar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+    color: #000;
+    text-align: center; }
+  .sidebar__appointment {
+    margin-top: 20px;
+    margin-left: 1rem; }
+  .sidebar__appointment-box {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    margin: 5px 5px;
+    background-color: #4fd1c5;
+    box-shadow: rgba(212, 212, 212, 0.35) 0px 2px 5px;
+    border-radius: 12px; }
+  .sidebar__talk-icon {
+    margin: 1rem 0 0 1rem;
+    font-size: 32px;
+    color: #fff; }
+  .sidebar__appointment-item {
+    padding-top: 5px; }
+  .sidebar__appointment-text {
+    margin: 0 0 0 1rem;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold; }
+    .sidebar__appointment-text p {
+      font-size: 10px;
+      font-weight: 300; }
+  .sidebar__appointment-button {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 10px 0 0 1rem;
+    border-radius: 12px;
+    width: 83%;
+    height: 35px;
+    border: none;
+    background-color: #fff;
+    transition: all 0.3s ease; }
+  .sidebar :hover.sidebar__nav-link {
+    color: #11101a;
+    background-color: #fff;
+    box-shadow: rgba(212, 212, 212, 0.35) 0px 2px 5px;
+    font-weight: bold; }
+  .sidebar :hover.sidebar__appointment-button {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px; }
+  .sidebar .sidebar__nav-link:hover > .sidebar__nav-icon {
+    background-color: #4fd1c5;
+    color: #fff;
+    border-color: #4fd1c5; }
+  .sidebar .bx-border {
+    border-radius: 8px;
+    box-shadow: rgba(212, 212, 212, 0.35) 0px 2px 2px;
+    border-color: #fff; }
+  .sidebar .bx-search-alt-2 {
+    position: absolute;
+    margin-top: 10px;
+    z-index: 99;
+    color: #000;
+    font-size: 30px; }
 
 .grid {
   display: grid;

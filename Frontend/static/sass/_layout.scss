@@ -35,58 +35,187 @@
 
 .sidebar {
     position: fixed;
+    width: 220px;
 
-    &__sidebar-content {
+    &__logo-content {
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
+        align-items: center;
         background-color: $color-light-grey;
-        padding: 6px 12px;
+        margin: 6px 12px;
+    }
 
-        &__logo_content {
-            &__logo {
-                color: $color-black;
-                display: flex;
-                height: 50px;
-                width: 100%;
-                align-items: center;
-                font-size: 26px;
-                margin-right: 5px;
+    &__logo {
+        margin: 1rem 0 0 1rem;
+        color: $color-black;
+        display: flex;
+        height: 50px;
+        width: 100%;
+        align-items: center;
+        font-size: 18px;
+        margin-right: 5px;
+    }
 
-                &__logo_name {
-                    font-size: 20px;
-                    font-weight: 400;
-                }
-            }
+    &__logo-icon {
+        background-color: $color-teal;
+        color: #fff;
+    }
+
+    &__logo_text {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    &__icon {
+        position: absolute;
+        color: #000;
+        left: 90%;
+        top: 30px;
+        font-size: 20px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        transform: translateX(-50%);
+    }
+
+    &__nav {
+        margin-top: 20px;
+        margin-left: 1rem;
+    }
+
+    &__nav-item {
+        position: relative;
+        list-style: none;
+        height: 50px;
+        width: 100%;
+        margin: 5px 5px;
+        line-height: 50px;
+    }
+
+    &__nav-link {
+        color: #a0aec0;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border-radius: 12px;
+    }
+
+    &__nav-search-icon {
+        max-width: 15px;
+        margin: 0 15px 0 15px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    &__nav-icon {
+        min-width: 15px;
+        margin: 0 15px 0 15px;
+        line-height: 50px;
+        text-align: center;
+        color: $color-teal;
+        transition: all 0.3s ease;
+        box-shadow: rgba(212, 212, 212, 0.35) 0px 2px 5px;
+        background-color: #fff;
+    }
+
+    &__search-bar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+        outline: none;
+        border: none;
+        background-color: #fff;
+        font-size: 16px;
+        color: #000;
+        text-align: center;
+    }
+
+    &__appointment {
+        margin-top: 20px;
+        margin-left: 1rem;
+    }
+
+    &__appointment-box {
+        position: relative;
+        height: 150px;
+        width: 100%;
+        margin: 5px 5px;
+        background-color: $color-teal;
+        box-shadow: rgba(212, 212, 212, 0.35) 0px 2px 5px;
+        border-radius: 12px;
+    }
+
+    &__talk-icon {
+        margin: 1rem 0 0 1rem;
+        font-size: 32px;
+        color: #fff;
+    }
+
+    &__appointment-item {
+        padding-top: 5px;
+    }
+
+    &__appointment-text {
+        margin: 0 0 0 1rem;
+        font-size: 14px;
+        color: #fff;
+        font-weight: bold;
+
+        p {
+            font-size: 10px;
+            font-weight: 300;
         }
+    }
 
-        &__nav {
-            margin-top: 20px;
+    &__appointment-button {
+        font-weight: bold;
+        font-size: 12px;
+        margin: 10px 0 0 1rem;
+        border-radius: 12px;
+        width: 83%;
+        height: 35px;
+        border: none;
+        background-color: #fff;
+        transition: all 0.3s ease;
+    }
 
-            &__item {
-                position: relative;
-                list-style: none;
-                height: 50px;
-                width: 100%;
-                margin: 0 5px;
-                line-height: 50px;
-
-                &__link {
-                    color: #fff;
-                    display: flex;
-                    align-items: center;
-                    text-decoration: none;
-
-                    &__icon {
-                        height: 50px;
-                        line-height: 50px;
-                        min-width: 50px;
-                        border-radius: 12px;
-                    }
-                }
-            }
+    :hover.sidebar {
+        &__nav-link {
+            color: #11101a;
+            background-color: #fff;
+            box-shadow: rgba(212, 212, 212, 0.35) 0px 2px 5px;
+            font-weight: bold;
         }
+        &__appointment-button {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+        }
+    }
+    .sidebar__nav-link:hover {
+        > .sidebar__nav-icon {
+            background-color: $color-teal;
+            color: #fff;
+            border-color: $color-teal;
+        }
+    }
+
+    .bx-border {
+        border-radius: 8px;
+        box-shadow: rgba(212, 212, 212, 0.35) 0px 2px 2px;
+        border-color: #fff;
+    }
+
+    .bx-search-alt-2 {
+        position: absolute;
+        margin-top: 10px;
+        z-index: 99;
+        color: #000;
+        font-size: 30px;
     }
 }
 
