@@ -16,7 +16,7 @@ export default class {
                         <div class="sidebar__logo-content">
                             <div class="sidebar__logo">
                             <i class='bx bx-plus-medical' ></i>
-                            <div class="sideba__logo_text">MedCure</div>
+                            <div class="sidebar__logo_text">MedCure</div>
                             </div>
                         </div>
                         <i class='bx bx-menu sidebar__icon' ></i>
