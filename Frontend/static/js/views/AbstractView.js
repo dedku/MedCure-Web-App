@@ -22,7 +22,7 @@ export default class {
                         <i class='bx bx-menu sidebar__icon' ></i>
                         <ul class="sidebar__nav">
                             <li class="sidebar__nav-item">
-                                    <i class="bx bx-search-alt-2 sidebar__nav-search-icon"></i>
+                                    <i class="bx bx-search-alt-2 sidebar__nav-search-icon   "></i>
                                     <input class="sidebar__search-bar" type="text" placeholder="Search...">
                             </li>
                             <li class="sidebar__nav-item">
@@ -58,8 +58,13 @@ export default class {
                         </ul>
                         <div class="sidebar__appointment">
                             <div class="sidebar__appointment-box">
-                                <div class="sidebar__appointment-button">
-                                    <button href="/appointment" data-link="">Set Appointment </button>
+                            <i class='bx bx-chat sidebar__talk-icon' ></i>
+                                <div class="sidebar__appointment-item">
+                                    <div class="sidebar__appointment-text">
+                                    Potrzebujesz pomocy?
+                                    <p>Skonsultuj się z lekarzem</p>
+                                    </div>
+                                    <button class="sidebar__appointment-button" href="/appointment" data-link="">Umów wizytę </button>
                                 </div>
                             </div>
                         </div>
