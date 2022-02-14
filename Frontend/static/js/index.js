@@ -43,15 +43,16 @@ const router = async () => {
     const view = new match.route.view();
 
     // Update new view html & nav data
-    document.getElementById("nav").querySelector(".sidebar").innerHTML = await view.getSidebar();
-    document.getElementById("app").querySelector(".main").innerHTML = await view.getHtml();
+    document.querySelector("#app").innerHTML = await view.getHtml();
 };
 
+// Update state when navigates thought session hisory
+window.addEventListener("popstate", router);
 
 // Prevent to reaload site if data-link matches
 function click() {
     document.body.addEventListener("click", e => {
-        if(e.target.matches("[data-link")) {
+        if(e.target.matches("[data-link]")) {
             e.preventDefault();
             navigateTo(e.target.href);
         }
@@ -63,9 +64,6 @@ function doAll() {
     router()
     click()
 }
-
-// Update state when navigates thought session hisory
-window.addEventListener("popstate", router);
 
 // Check if DOMContentLoaded event was already fired
 if( document.readyState !== 'loading' ? doAll() : doAll() );
