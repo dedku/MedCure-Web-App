@@ -1,0 +1,15 @@
+@mixin grid-base {
+    display: grid;
+    padding: 1rem 1rem;
+    grid-row-gap: 20px;
+    grid-column-gap: 2rem;
+}
+
+@mixin box-standard {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: span 2;
+    grid-column: span 3;
+    padding: 0.8rem;
+    border-radius: $radius-border;
+}

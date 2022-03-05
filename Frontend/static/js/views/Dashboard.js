@@ -34,7 +34,7 @@ export default class extends AbstractView {
         </div>
     </div>
 
-    <div class="grid">
+    <div class="grid grid__dashboard">
         
         <div class="grid__mid-box-1">
             <div class="grid__content-1">

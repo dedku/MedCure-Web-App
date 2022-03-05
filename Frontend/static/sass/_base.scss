@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-$color-teal: #4fd1c5;
-$color-black: rgba(0, 0, 0, 1);
-$color-white: rgba(255, 255, 255, 1);
-$color-light-grey: #f5f5f5;
-
-$color-dark-grey: rgba(191, 191, 191, 1);
-$color-gray-p: #2d3748;
-
-$radius-border: 12px;
-
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +7,7 @@ $radius-border: 12px;
 }
 
 body {
-    background-color: $color-light-grey;
+    // background-color: $color-light-grey;
     height: 100vh;
     margin: 0px;
     display: grid;
