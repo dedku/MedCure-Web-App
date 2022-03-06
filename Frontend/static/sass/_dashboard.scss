@@ -1,3 +1,51 @@
+// 4 boxes with statistic in dashboard
+.dashboard {
+    display: grid;
+    padding: 1rem 1rem;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+
+    &__box {
+        font-size: 1rem;
+        background-color: $color-white;
+        // box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: 0.1);
+        border-radius: $radius-border;
+        // text-align: left;
+        padding-left: 1rem;
+
+        // zdefiniowana wysokosc dla top-boxów
+        height: 100%;
+
+        &__text-top {
+            color: $color-dark-grey;
+            font-size: 0.7rem;
+            transform: translateY(+3px);
+            padding-top: 8px;
+            padding-bottom: 4px;
+        }
+
+        &__text-bottom {
+            color: $color-gray-p;
+            font-size: 1.2rem;
+            font-weight: 900;
+
+            &mid-box__1 {
+                grid-template-columns: 20rem 20rem;
+            }
+        }
+
+        &__icon {
+            display: block;
+            float: right;
+            transform: scale(1.2) translate(-1.2rem, -1.6rem);
+            background-color: $color-teal;
+            color: #fff;
+            box-shadow: rgba(212, 212, 212, 0.35) 0px 2px 5px;
+        }
+    }
+}
+
+// 4 middle boxes in dashboard
 .grid {
     @include grid-base;
 

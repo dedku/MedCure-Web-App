@@ -3,18 +3,18 @@
 
     &__profile {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(8, 150px);
+        grid-template-rows: repeat(7, 150px);
     }
 
     // Profile styles
     &__probox--1 {
         @include box-standard;
-        background-color: $color-white;
+        background-color: $color-teal;
     }
 
     &__probox--2 {
         @include box-standard;
-        background-color: $color-white;
+        background-color: $color-teal;
     }
 
     &__probox--3 {
@@ -24,7 +24,7 @@
         grid-row-end: 8;
         grid-row: span 3;
         grid-column: span 3;
-        background-color: $color-teal;
+        background-color: $color-white;
         padding: 0.8rem;
         border-radius: $radius-border;
     }
@@ -39,40 +39,22 @@
     // padding: 0.8rem;
     margin: 0.5rem 10rem 0.5rem 0.5rem;
     border-radius: $radius-border;
-    height: 40%;
+    height: 90%;
     width: auto;
-    transform: translateY(-10rem);
+    // transform: translateY(-10rem);
 }
 
 .profile-icon {
     color: $color-teal;
 }
 
-.firstbox-1 {
-    // grid-row-start: 3;
-    // grid-row-end: 4;
-    // grid-row: span 2;
-    background-color: $color-white;
-}
-
-.firstbox-2 {
-    // grid-row-start: 3;
-    // grid-row-end: 4;
-    // grid-row: span 2;
+.midbox {
     background-color: $color-white;
 }
 
 .newbox {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: $color-white;
-    height: 90%;
-}
-
-&__newbox-1 {
-    display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 2;
-    // display: grid;
-    background-color: $color-white;
+    // background-color: $color-teal;
+    // height: 90%;
 }

@@ -14,19 +14,17 @@ export default class extends AbstractView {
 <div class="grid grid__profile">
 
     <div class="grid grid__probox--1">
-    <div class="newbox-1">
         <div class="general-box">
            <p>tego ten</p>
            <i class='bx bxs-face profile-icon'></i>
-           </div>
         </div>
     </div>
 
     <div class="grid grid__probox--2">
         <div class ="newbox">
-            <div class="firstbox-1">somebox</div>
-            <div class="firstbox-2">somebox</div>
-            <div class="firstbox-3">somebox</div>
+            <div class="mid-box">somebox</div>
+            <div class="mid-box">somebox</div>
+            <div class="mid-box">somebox</div>
         </div>
     </div>
 
