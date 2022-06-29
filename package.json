@@ -17,5 +17,8 @@
         "prettier:fix": "prettier --write 'styles/**/*.scss' 'scripts/**/*.{js,jsx,ts,tsx}'",
         "start": "node server.js",
         "sass": "sass frontend/static/sass/main.scss frontend/static/css/main.css -w"
-    }
+    },
+    "engines": {
+        "node": "^14.15 || ^16.15"
+  },
 }
