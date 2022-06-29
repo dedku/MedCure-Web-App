@@ -15,6 +15,7 @@
     "scripts": {
         "prettier:check": "prettier --list-different 'styles/**/*.scss' 'scripts/**/*.{js,jsx,ts,tsx}'",
         "prettier:fix": "prettier --write 'styles/**/*.scss' 'scripts/**/*.{js,jsx,ts,tsx}'",
-        "compile:sass": "node-sass Frontend/static/sass/main.scss Frontend/static/css/main.css -w"
+        "start": "node server.js",
+        "sass": "sass frontend/static/sass/main.scss frontend/static/css/main.css -w"
     }
 }
