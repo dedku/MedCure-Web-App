@@ -1,6 +1,6 @@
 # MedCure-Web-App
-> Poligrafia Łowicz company Website.
-> Live demo [_here_](https://test-druk-5abd4.web.app/). <!-- If you have the project hosted somewhere, include the link here. -->
+> MedCure vanilla js app.
+> Live demo [_here_](https://medcure-web-app-production.up.railway.app/). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
 * [Screenshots](#screenshots)
