@@ -1,4 +1,4 @@
-import AbstractView from './AbstractView';
+import AbstractView from './AbstractView.js';
 
 export default class extends AbstractView {
     constructor(parmams) {
@@ -10,28 +10,31 @@ export default class extends AbstractView {
         return `
     <div class="dashboard">
         <div class="dashboard__box">
-        <p class="dashboard__box__text-top">Todays Money</p>
-        <p class="dashboard__box__text-bottom">$53000</p>
+            <div class="dashboard__text">
+                <p class="dashboard__text-top">Todays Money</p>
+                <p class="dashboard__text-bottom">$53000</p>
+                <i class='bx bx-face dashboard__icon' ></i>
+            </div>
         </div>
 
         <div class="dashboard__box">
-        <p class="dashboard__box__text-top">Todays Users</p>
-        <p class="dashboard__box__text-bottom">2300</p>
+        <p class="dashboard__text-top">Todays Users</p>
+        <p class="dashboard__text-bottom">2300</p>
         </div>
 
         <div class="dashboard__box">
-        <p class="dashboard__box__text-top">New Clients</p>
-        <p class="dashboard__box__text-bottom">+3052</p>
+        <p class="dashboard__text-top">New Clients</p>
+        <p class="dashboard__text-bottom">+3052</p>
         </div>
 
         <div class="dashboard__box">
-        <p class="dashboard__box__text-top">Total Sales</p>
-        <p class="dashboard__box__text-bottom">$173000</p>
+        <p class="dashboard__text-top">Total Sales</p>
+        <p class="dashboard__text-bottom">$173000</p>
         </div>
     </div>
 
     <div class="grid">
-        
+
             <div class="grid__mid-box__1">
             <h1>Who we are ?</h1>
             <p>Same koxy, nic wspolnego z medycyną</p>
@@ -39,7 +42,7 @@ export default class extends AbstractView {
             <div class="grid__mid-box__2">New Boxes</div>
             <div class="grid__mid-box__3">New Boxes</div>
             <div class="grid__mid-box__4">New Boxes</div>
-        
+
     </div>
 
         `;
